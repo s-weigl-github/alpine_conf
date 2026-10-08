@@ -123,7 +123,6 @@ install_net_tools(){
     arpwatch \
     net-tools \
     cifs-utils \
-    ssh-askpass \
     openssh-server
 }
 #
