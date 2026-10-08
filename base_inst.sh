@@ -73,11 +73,9 @@ install_info(){
     ncdu \
     btop \
     dysk \
-    bpytop \
     hwinfo \
     lsscsi \
     hdparm \
-    blktool \
     sysstat \
     fastfetch \
     dmidecode \
