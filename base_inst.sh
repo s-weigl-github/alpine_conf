@@ -124,7 +124,7 @@ install_net_tools(){
     net-tools \
     cifs-utils \
     ssh-askpass \
-    openssh-server \
+    openssh-server
 }
 #
 ##########################################################
