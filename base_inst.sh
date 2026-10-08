@@ -117,21 +117,14 @@ install_net_tools(){
     lynx \
     curl \
     samba \
-    afuse \
     minicom \
     ethtool \
     sipcalc \
     arpwatch \
-    ipcalc-ng \
     net-tools \
-    smbclient \
-    nfs-common \
     cifs-utils \
-    netdiscover \
-    lynx-common \
     ssh-askpass \
     openssh-server \
-    ntpsec-ntpdate
 }
 #
 ##########################################################
