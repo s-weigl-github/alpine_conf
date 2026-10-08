@@ -136,23 +136,15 @@ install_other_tools(){
   echo "############################################"
   #
   apk add \
-    iat \
     rpm \
     zip \
-    rar \
-    arj \
     xxd \
     acpi \
-    lzma \
     alien \
     unzip \
-    unrar \
     bzip2 \
-    pbzip2 \
     usbutils \
     elfutils \
-    tealdeer \
-    rpm-common \
     lm-sensors \
     btrfs-progs
 }
