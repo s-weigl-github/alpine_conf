@@ -88,4 +88,4 @@ yarn-error.log
 .pnp.*
 .idea
 
-server_install.sh
+.server_install.sh
