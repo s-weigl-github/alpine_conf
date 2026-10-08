@@ -47,16 +47,11 @@ install_system_tools(){
     strace \
     psmisc \
     gettext \
-    plocate \
     texinfo \
+    mlocate \
     binutils \
     autoconf \
     moreutils \
-    pkg-config \
-    libelf-dev \
-    genisoimage \
-    gnu-standards \
-    libncurses-dev \
     bash-completion \
     ca-certificates 
 }
