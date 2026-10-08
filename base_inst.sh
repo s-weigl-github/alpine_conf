@@ -99,12 +99,9 @@ install_dev_tools(){
     make \
     bison \
     cmake \
-    dwarves \
     lowdown \
     automake \
-    shellcheck \
-    git-extras \
-    autotools-dev
+    shellcheck
 }
 #
 ##########################################################
