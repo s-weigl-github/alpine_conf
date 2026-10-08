@@ -84,6 +84,6 @@ Nothing yet!
 6. and ... -->
 
 
-[link] (http://techblog.linux-himmel.org/wordpress/)
-[link2] (http://github.com/github/markup/tree/master/lib/github/markups.rb#L13)
-[link3] (http://github.com/github/markup/pulls)
+- [link](http://techblog.linux-himmel.org/wordpress/)
+- [link2](http://github.com/github/markup/tree/master/lib/github/markups.rb#L13)
+- [link3](http://github.com/github/markup/pulls)
