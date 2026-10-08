@@ -1,4 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+################################################################################
+#
+#  install scrits for fss
+#
+################################################################################
+# Config
+# set:
+# -e: if it finds any error, it ends the execution immediately
+set -e
+#
 echo "................................................"
 echo "----starte installation der Web-Server Komponenten----"
 echo "...."

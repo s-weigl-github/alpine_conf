@@ -33,7 +33,7 @@ install_system_tools(){
   echo " Install sytem tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     bc \
     bat \
     kmod \
@@ -41,6 +41,7 @@ install_system_tools(){
     tree \
     lsof \
     lnav \
+    sudo \
     fwupd \
     rsync \
     strace \
@@ -55,8 +56,9 @@ install_system_tools(){
     libelf-dev \
     genisoimage \
     gnu-standards \
+    libncurses-dev \
     bash-completion \
-    libncurses-dev
+    ca-certificates 
 }
 #
 ##########################################################
@@ -68,7 +70,7 @@ install_info(){
   echo " Install info tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     fzf \
     inxi \
     htop \
@@ -96,7 +98,7 @@ install_dev_tools(){
   echo " Install development tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     git \
     gcc \
     g++ \
@@ -121,7 +123,7 @@ install_net_tools(){
   echo " Install network tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     lynx \
     curl \
     samba \
@@ -151,7 +153,7 @@ install_other_tools(){
   echo " Install other tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     iat \
     rpm \
     zip \
@@ -176,33 +178,13 @@ install_other_tools(){
 ##########################################################
 # 6 #
 ##########################################################
-install_deb_specific(){
-  echo
-  echo "############################################"
-  echo " Install specific Debian tools"
-  echo "############################################"
-  #
-  apk install -y \
-    sudo \
-    dh-make \
-    debian-keyring \
-    build-essential \
-    ca-certificates \
-    module-assistant \
-    apt-show-versions \
-    apt-transport-https
-}
-#
-##########################################################
-# 7 #
-##########################################################
 install_graphic_tools(){
   echo
   echo "############################################"
   echo " Install graphic tools"
   echo "############################################"
   #
-  apk install -y \
+  apk add \
     gv \
     a2ps \
     menu \
@@ -217,9 +199,8 @@ install_graphic_tools(){
 ########################### MAIN #########################
 show_header
 sleep 2
-apk update && apt-get upgrade
+apk update && apk upgrade -U
 #
-install_deb_specific  # 6 #
 sleep 2
 install_system_tools  # 1 #
 sleep 2
@@ -231,7 +212,7 @@ install_net_tools     # 4 #
 sleep 2
 install_other_tools   # 5 #
 sleep 2
-install_graphic_tools # 7 #
+install_graphic_tools # 6 #
 #
 ##########################################################
 # end of script #
